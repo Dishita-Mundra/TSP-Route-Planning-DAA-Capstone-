@@ -1,0 +1,6 @@
+City,City_A,City_B,City_C,City_D,City_E
+City_A,0,10,15,20,12
+City_B,10,0,35,25,17
+City_C,15,35,0,30,28
+City_D,20,25,30,0,14
+City_E,12,17,28,14,0
