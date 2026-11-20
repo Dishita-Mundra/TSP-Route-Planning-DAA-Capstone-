@@ -1,6 +1,4 @@
-
 import time
-
 
 def calculate_route_distance(route, graph):
     """Calculate total distance of a route, including return to start."""
@@ -11,7 +9,6 @@ def calculate_route_distance(route, graph):
 
     total += graph[route[-1]][route[0]]
     return total
-
 
 def nearest_neighbor(graph, start=0):
     """Approximate TSP solution using Nearest Neighbor."""
@@ -40,7 +37,6 @@ def nearest_neighbor(graph, start=0):
     )
 
     return route, distance
-
 
 def branch_and_bound(graph, start=0):
     """Find the optimal TSP tour using Branch and Bound."""
@@ -79,7 +75,6 @@ def branch_and_bound(graph, start=0):
     search(start, {start}, [start], 0)
 
     return best_route, best_cost
-
 
 def benchmark(graph, start=0):
     """Compare the two algorithms and measure execution time."""
